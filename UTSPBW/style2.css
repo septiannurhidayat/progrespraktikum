@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #7A1919;
+    --secondary-color: #ffffff;
+    --hover-bg-color: #f4f4f4;
+    --active-bg-color: #b02828;
+    --text-color: #7A1919;
+    --focus-color: #b02828;
+    --pressed-bg-color: #a02222; /* Color for pressed state */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    min-height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sidebar-header h1 {
+    margin: 0;
+    font-size: 24px;
+    background: linear-gradient(to right, black, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sidebar-header .unis {
+    font-weight: bold;
+}
+
+.sidebar-header .class {
+    font-weight: lighter;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar-menu li {
+    width: 100%;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu li a.active,
+.sidebar-menu li a:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.sidebar-menu li a:focus,
+.sidebar-menu li a:active {
+    background-color: var(--active-bg-color);
+    color: var(--secondary-color);
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
+
+.sign-out {
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px; 
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.sign-out:hover,
+.sign-out:focus {
+    background-color: var(--hover-bg-color);
+}
+
+.sign-out:active {
+    background-color: var(--pressed-bg-color);
+    transform: scale(0.95);
+}
+
+.sign-out i {
+    margin-right: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hover-bg-color);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: start;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.top-nav a.active,
+.top-nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.content-header {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header h2 {
+    margin: 0;
+}
+
+.content-header p {
+    margin: 0;
+}
+
+.material-form {
+    padding: 20px;
+}
+
+.material-form h3 {
+    margin-top: 0;
+}
+
+.material-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.material-form label {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.material-form input[type="text"],
+.material-form input[type="file"],
+.material-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.material-form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.material-form button:hover {
+    background-color: var(--active-bg-color);
+}
+
+.material-list {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.material-list h4 {
+    margin: 0 0 5px;
+}
+
+.material-list p {
+    margin: 0;
+}

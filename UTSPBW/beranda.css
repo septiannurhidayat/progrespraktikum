@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    background-color: blue;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    padding: 50px;
+}
+
+/* Container for left menu, content, and right content */
+.container {
+    display: flex;
+    height: 600px;
+}
+
+/* Left menu styling */
+.left-menu {
+    background-color: orange;
+    width: 25%;
+    padding: 20px;
+}
+
+.left-menu ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.left-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Content styling */
+.content {
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+/* Right content styling */
+.right-content {
+    background-color: orange;
+    width: 25%;
+    padding: 20px;
+    .right-content img {
+        width: 200px;
+        height: 150px;
+    }
+    
+}
+
+/* Footer styling */
+.footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
